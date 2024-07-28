@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context=".MemberLogin">
+
+
+    <RelativeLayout
+        android:id="@+id/me_relativeLayout"
+        android:layout_width="373dp"
+        android:layout_height="395dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/me_textView1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:text="Üye Girişi"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/me_textView2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="95dp"
+            android:text="E-posta adresiniz"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/me_textView3"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="187dp"
+            android:text="Şifreniz"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/me_editTextText"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="129dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/border_edittext"
+            android:hint="E-posta Adresinizi Giriniz"
+            android:inputType="text"
+            android:padding="10dp"
+
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/me_editTextText2"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="229dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/border_edittext"
+            android:hint="Şifrenizi Giriniz"
+            android:inputType="text"
+            android:padding="10dp"
+
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/me_button2"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="23dp"
+            android:background="#9ADE7B"
+            android:onClick="mainpage"
+            android:text="Giriş Yap"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="395dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/me_backButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#9ADE7B"
+            android:drawableStart="@drawable/back"
+            android:drawablePadding="0dp"
+            android:onClick="backToMain"
+            android:text="Geri Dön"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="372dp"
+        android:layout_height="134dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/me_relativeLayout"
+        app:layout_constraintVertical_bias="0.478">
+
+        <TextView
+            android:id="@+id/me_textView4"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="95dp"
+            android:text="Üye Değil Misiniz?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/me_button3"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="20dp"
+            android:background="#9ADE7B"
+            android:onClick="memberSignUp"
+            android:text="Kayıt Ol"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

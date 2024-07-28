@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "888428340121",
+    "project_id": "cebimdekidanisman",
+    "storage_bucket": "cebimdekidanisman.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888428340121:android:28abad51f97f8e55a56908",
+        "android_client_info": {
+          "package_name": "com.emrebilgin.cebimdekidanisman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYWs23I2lz4LSX-Q99dug50rC5_lZYDsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

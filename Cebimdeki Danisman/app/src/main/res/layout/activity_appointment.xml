@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appointment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:background="#9ADE7B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/border4"
+            android:drawableStart="@drawable/back"
+            android:drawablePadding="5dp"
+            android:onClick="backToMainPage"
+            android:padding="3dp"
+            android:text="Geri Dön"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/backButton"
+            android:padding="4dp"
+            android:text="Randevu Alınız"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="347dp"
+        android:layout_height="320dp"
+        android:layout_above="@+id/text_view_selected_date"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/border4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_selected_date"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/appointmentsendButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/border4"
+        android:padding="10dp"
+        android:text="Seçilen Tarih : "
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/appointmentsendButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="37dp"
+        android:background="#9ADE7B"
+        android:text="Onayla" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="45dp"
+        android:background="#9ADE7B"
+        android:onClick="roadToAppointmenList"
+        android:text="Randevular" />
+
+
+</RelativeLayout>

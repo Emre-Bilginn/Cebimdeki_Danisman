@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DDDDDD"
+    tools:context=".MainPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="410dp"
+                android:layout_height="67dp"
+                android:background="#9ADE7B"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/m_textView"
+                    android:layout_width="160dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="49dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_toStartOf="@+id/button_appointment"
+                    android:gravity="center_horizontal"
+                    android:text="Hoşgeldiniz"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/button_appointment"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="#ffff"
+                    android:onClick="appointment"
+                    android:text="Randevu Al"
+                    android:textAlignment="center"
+                    android:textColor="#9ADE7B"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/border2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="329dp"
+                    android:layout_height="97dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="71dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginBottom="46dp"
+                    android:text="text"
+                    android:textAlignment="center"
+                    android:textColor="#508D69"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="380dp"
+                android:layout_height="323dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/saglikli_beslenme" />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="301dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="67dp"
+                    android:layout_marginEnd="39dp"
+                    android:text="Sık Sorulanlar"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="129dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="text"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="98dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="141dp"
+                    android:layout_marginEnd="141dp"
+                    android:layout_marginBottom="152dp"
+                    app:srcCompat="@drawable/question_circle" />
+
+                <TextView
+                    android:id="@+id/showAllTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:onClick="frequentlyAskedQuestions"
+                    android:text="Tümünü Gör"
+                    android:textColor="#9ADE7B"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="129dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="text"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"  />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="301dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="67dp"
+                    android:layout_marginEnd="39dp"
+                    android:text="Kullanıcı Yorumları"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="98dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="141dp"
+                    android:layout_marginEnd="141dp"
+                    android:layout_marginBottom="152dp"
+                    app:srcCompat="@drawable/comment_icons" />
+
+                <TextView
+                    android:id="@+id/showAllTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:onClick="userComments"
+                    android:text="Tümünü Gör"
+                    android:textColor="#9ADE7B"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/border3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="359dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="129dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="text"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"   />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="301dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="67dp"
+                    android:layout_marginEnd="39dp"
+                    android:text="Bize Tavsiyede Bulunun"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="98dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="141dp"
+                    android:layout_marginEnd="141dp"
+                    android:layout_marginBottom="152dp"
+                    app:srcCompat="@drawable/idea_icon" />
+
+                <TextView
+                    android:id="@+id/showAllTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:onClick="giveUsAdvice"
+                    android:text="Tümünü Gör"
+                    android:textColor="#9ADE7B"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#9ADE7B"
+                android:onClick="chat"
+                android:text="Diyetisyene Sor"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
